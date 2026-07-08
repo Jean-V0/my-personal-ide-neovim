@@ -1,5 +1,6 @@
-vim.keymap.set("n", "<S-h>", "<Cmd>BufferPrevious<CR>")
-vim.keymap.set("n", "<S-l>", "<Cmd>BufferNext<CR>")
+vim.keymap.set("n", "<A-,>", "<Cmd>BufferPrevious<CR>")
+vim.keymap.set("n", "<A-.>", "<Cmd>BufferNext<CR>")
+vim.keymap.set("n", "<A-c>", "<Cmd>BufferClose<CR>")
 
 for i = 1, 9 do
   vim.keymap.set("n", "<A-" .. i .. ">", "<Cmd>BufferGoto " .. i .. "<CR>")

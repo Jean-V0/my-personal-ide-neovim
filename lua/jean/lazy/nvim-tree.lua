@@ -14,7 +14,7 @@
     vim.keymap.set("n", "?",     api.tree.toggle_help,                  opts("Help"))
   end
 
-vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+vim.keymap.set("n", "<C-n>", ":NvimTreeToggle<CR>")
 
 return {
   "nvim-tree/nvim-tree.lua",
