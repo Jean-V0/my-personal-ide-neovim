@@ -11,7 +11,7 @@ return {
       require('catppuccin').setup({
         transparent_background = false,
       })
-      ConfigMyColor('catppuccin');
+      ConfigMyColor('catppuccin-macchiato');
     end
   }
 }
