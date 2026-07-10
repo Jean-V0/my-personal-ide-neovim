@@ -10,8 +10,7 @@ return {
     config = function()
         require('telescope').setup({})
 
-        local preview_utils = require("telescope.previewers.utils")
-        preview_utils.ts_highlighter = function(bufnr, ft)
+        require("telescope.previewers.utils").preview_utils.ts_highlighter = function(bufnr, ft)
             local lang = vim.treesitter.language.get_lang(ft) or ft
             if not lang or lang == "" then
                 return false

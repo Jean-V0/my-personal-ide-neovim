@@ -40,7 +40,7 @@ return {
     -- OR setup with a config
 
     ---@type nvim_tree.config
-    local config = {
+    local _ = {
       sort = {
         sorter = "case_sensitive",
       },
@@ -53,6 +53,6 @@ return {
       filters = {
         dotfiles = true,
       },
-    }  
+    }
   end,
 }
